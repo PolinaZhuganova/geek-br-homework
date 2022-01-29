@@ -1,0 +1,6 @@
+rootProject.name = 'geek-br-homework'
+include 'HW_1_heritage'
+include 'HW_2_inner:nested_classes'
+findProject(':HW_2_inner:nested_classes')?.name = 'HW_2_inner_and_nested_classes'
+include 'HW_2_classes_and_interfaces'
+
