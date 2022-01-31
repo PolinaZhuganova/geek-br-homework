@@ -1,0 +1,14 @@
+import model.Methods;
+
+/**
+ * Класс Main
+ */
+public class Main {
+
+	public static void main(String[] args) {
+
+		Methods methods = new Methods();
+		methods.firstMt();
+		methods.secondMt();
+	}
+}
