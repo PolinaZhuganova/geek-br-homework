@@ -58,6 +58,13 @@ public class Methods {
 		first.start();
 		second.start();
 
+		try{first.join();
+			second.join();}
+		catch (InterruptedException e){
+			e.printStackTrace();
+		}
+
+
 		System.arraycopy(arr1, 0, arr, 0, HALF);
 		System.arraycopy(arr2, 0, arr, HALF, HALF);
 
