@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Arrays;
+
 /**
  * Класс Methods
  */
@@ -20,18 +22,17 @@ public class Methods {
 		}
 	});
 	Thread second = new Thread(() -> {
-		for (int i = 0; i < arr2.length; i++) {
-			arr2[i] = (float) (arr2[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) *
-				Math.cos(0.4f + i / 2));
+		for (int i = 0, j=HALF;  i < arr2.length; i++,j++) {
+			arr2[i] = (float) (arr2[i] * Math.sin(0.2f + j / 5) * Math.cos(0.2f + j / 5) *
+				Math.cos(0.4f + j / 2));
 		}
 	});
 
 
 	public void firstMt() {
 		float[] arr = new float[SIZE];
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = 1;
-		}
+		Arrays.fill(arr, 1.0F);
+
 		long a = System.currentTimeMillis();
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = (float) (arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) *
@@ -46,9 +47,7 @@ public class Methods {
 	public void secondMt() {
 
 		float[] arr = new float[SIZE];
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = 1;
-		}
+		Arrays.fill(arr, 1.0F);
 
 		long a = System.currentTimeMillis();
 
