@@ -5,4 +5,5 @@ findProject(':HW_2_inner:nested_classes')?.name = 'HW_2_inner_and_nested_classes
 include 'HW_2_classes_and_interfaces'
 include 'HW_5_threads'
 include 'HW_7_concurrency'
+include 'HW_8_stream'
 
