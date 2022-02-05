@@ -1,0 +1,37 @@
+CREATE TABLE students(id INT , name VARCHAR PRIMARY KEY , pseria INT, pnumber INT,
+		CONSTRAINT unique_ser_num UNIQUE (pseria, pnumber));
+		CREATE TABLE subjects(id INT, subject VARCHAR);
+		CREATE TABLE progress(id INT, student VARCHAR ,
+		subject VARCHAR, mark INT CHECK (mark >=2 AND mark<=5) );
+
+
+		INSERT INTO students(name, pseria,pnumber) VALUES ('Vasya', 333,444);
+		INSERT INTO students(name, pseria,pnumber) VALUES ('Petya', 332,446);
+		INSERT INTO students(name, pseria,pnumber) VALUES ('Sanya', 334,447);
+		INSERT INTO students(name, pseria,pnumber) VALUES ('Tanya', 335,448);
+
+		INSERT INTO subjects(subject) VALUES ('English');
+		INSERT INTO subjects(subject) VALUES ('German');
+		INSERT INTO subjects(subject) VALUES ('Spanish');
+		INSERT INTO subjects(subject) VALUES ('Hindi');
+
+		INSERT INTO progress (student, subject,mark) VALUES ('Vasya', 'English', 2 );
+		INSERT INTO progress (student, subject,mark) VALUES ('Petya', 'German', 3 );
+		INSERT INTO progress (student, subject,mark) VALUES ('Sanya', 'Hindi', 4);
+		INSERT INTO progress (student, subject,mark) VALUES ('Tanya', 'Spanish', 5 );
+		INSERT INTO progress (student, subject,mark) VALUES ('Vasya', 'German', 5 );
+
+		SELECT student FROM progress WHERE subject='Hindi' AND mark>3;
+
+		ALTER TABLE progress ADD FOREIGN KEY (student) REFERENCES students(name) ON DELETE CASCADE;
+
+		SELECT AVG(mark) AS avMark from progress GROUP BY subject;
+
+		SELECT AVG(mark) AS avStMark from progress GROUP BY student;
+
+		SELECT subject FROM progress WHERE mark>=4 LIMIT(0,3);
+
+
+
+
+
