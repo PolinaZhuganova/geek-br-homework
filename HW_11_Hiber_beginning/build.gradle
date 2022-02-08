@@ -1,0 +1,24 @@
+
+plugins {
+    id 'java'
+}
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.25'
+    implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.0.0.Beta3'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}

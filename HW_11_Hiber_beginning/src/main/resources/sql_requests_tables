@@ -1,0 +1,15 @@
+CREATE TABLE buyerInfo (id SERIAL UNIQUE PRIMARY KEY , name VARCHAR);
+INSERT INTO buyerInfo ( name) VALUES  ( 'A');
+INSERT INTO buyerInfo ( name) VALUES  ( 'B');
+INSERT INTO buyerInfo ( name) VALUES  ( 'C');
+INSERT INTO buyerInfo ( name) VALUES  ( 'D');
+
+CREATE TABLE goods (id SERIAL  UNIQUE PRIMARY KEY , type VARCHAR, price INT);
+INSERT INTO goods( type, price) VALUES ( 'soap', 20 );
+INSERT INTO goods( type, price) VALUES ( 'cheese', 250 );
+INSERT INTO goods( type, price) VALUES ( 'apple', 10 );
+INSERT INTO goods( type, price) VALUES ( 'pen', 5 );
+INSERT INTO goods( type, price) VALUES ( 'pepper', 30 );
+INSERT INTO goods( type, price) VALUES ( 'meat', 350 );
+
+CREATE TABLE buyerGood (id SERIAL  UNIQUE PRIMARY KEY, name VARCHAR, good VARCHAR);
