@@ -9,4 +9,5 @@ include 'HW_8_stream'
 include 'HW_9_JDBC_annotation_reflection'
 include 'HW_10Postgres_terminal'
 include 'HW_11_Hiber_beginning'
+include 'HW_12_Hiber'
 
