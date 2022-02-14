@@ -10,4 +10,7 @@ include 'HW_9_JDBC_annotation_reflection'
 include 'HW_10Postgres_terminal'
 include 'HW_11_Hiber_beginning'
 include 'HW_12_Hiber'
+include 'HW_13_Spring_core'
+include 'HW_Otus_spring_1'
+include 'HW_Otus_spring_1'
 
