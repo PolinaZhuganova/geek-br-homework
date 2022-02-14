@@ -1,13 +1,15 @@
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+package services;
+
+import model.Product;
+import org.springframework.stereotype.*;
 
 import java.util.*;
 
 /**
  * Класс Cart
  */
-@Component
-public class Cart {
+@Service
+public class CartService {
 
 	static List<Product> orderList;
 

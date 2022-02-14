@@ -1,17 +1,20 @@
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
+
+import org.springframework.context.annotation.*;
+import org.springframework.stereotype.Component;
+import services.OrderService;
 
 /**
  * Класс Main
  */
 @ComponentScan
 public class Main {
-
-	@Autowired
-	OrderService orderService;
-
 	public static void main(String[] args) {
-		Main maim = new Main();
-		maim.orderService.createOrder();
+
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+		context.register(Main.class);
+		context.refresh();
+
+		OrderService orderService = context.getBean(OrderService.class);
+		orderService.createOrder();
 	}
 }

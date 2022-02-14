@@ -1,9 +1,10 @@
+package model;
+
 import org.springframework.stereotype.Component;
 
 /**
- * Класс Product
+ * Класс model.Product
  */
-@Component
 
 public class Product {
 
