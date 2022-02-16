@@ -7,13 +7,13 @@
 	<!-- TODO: определите бины здесь -->
 
 
-	<bean id="fileQuestionRepository" class="repository.FileQuestionRepository"/>
-	<bean id="consoleUserInfoService" class="service.ConsoleUserInfoService"/>
+<!--	<bean id="fileQuestionRepository" class="repository.FileQuestionRepository"/>-->
+<!--	<bean id="consoleUserInfoService" class="service.ConsoleUserInfoService"/>-->
 
-	<bean id="testExecutorService" class="service.TestExecutorService">
-		<property name="consoleUserInfoService" ref="consoleUserInfoService"/>
-		<property name="repository" ref="fileQuestionRepository"/>
+<!--	<bean id="testExecutorService" class="service.TestExecutorService">-->
+<!--		<property name="consoleUserInfoService" ref="consoleUserInfoService"/>-->
+<!--		<property name="repository" ref="fileQuestionRepository"/>-->
 
-	</bean>
+<!--	</bean>-->
 
 </beans>

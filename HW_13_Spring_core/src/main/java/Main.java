@@ -1,6 +1,4 @@
-
 import org.springframework.context.annotation.*;
-import org.springframework.stereotype.Component;
 import services.OrderService;
 
 /**

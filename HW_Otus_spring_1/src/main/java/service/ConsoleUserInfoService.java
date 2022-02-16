@@ -8,6 +8,7 @@ import java.util.Scanner;
 /**
  * Класс ConsoleUserInfoService
  */
+
 @NoArgsConstructor
 public class ConsoleUserInfoService implements UserInfoService {
 

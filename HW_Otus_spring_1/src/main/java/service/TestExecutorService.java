@@ -2,6 +2,7 @@ package service;
 
 import lombok.*;
 import model.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import repository.*;
 
 import java.io.IOException;
@@ -10,11 +11,15 @@ import java.util.*;
 /**
  * Класс ExecuteTest
  */
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
+
 public class TestExecutorService {
+	@Autowired
 	private UserInfoService consoleUserInfoService;
+	@Autowired
 	private QuestionsRepository repository;
 
 	public void startTest() throws IOException {
