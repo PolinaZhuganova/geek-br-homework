@@ -2,6 +2,7 @@ package repository;
 
 import model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.*;
 
 import java.util.*;
@@ -9,7 +10,7 @@ import java.util.*;
 /**
  * Класс repository.ProductService
  */
-@Repository
+@Component
 public class ProductService {
 
 

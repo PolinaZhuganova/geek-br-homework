@@ -1,12 +1,15 @@
 package config;
 
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.*;
+import org.springframework.stereotype.Component;
 import repository.*;
 import service.*;
 
 /**
  * Класс Config
  */
+@Component
+@Configuration
 public class Config {
 
 	@Bean

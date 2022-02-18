@@ -1,11 +1,9 @@
 package model;
 
-import org.springframework.stereotype.Component;
 
 /**
  * Класс model.Product
  */
-
 public class Product {
 
 	private int id;

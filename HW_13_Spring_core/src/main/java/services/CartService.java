@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * Класс Cart
  */
-@Service
+@Component
 public class CartService {
 
 	static List<Product> orderList;

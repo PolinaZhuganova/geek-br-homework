@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Класс services.OrderService
  */
 
-@Service
+@Component
 public class OrderService {
 
 	private final ProductService productService;
